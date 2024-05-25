@@ -1,0 +1,86 @@
+
+(rules PCB Rom 01 IIgs RGBToHDMI-export
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 12039)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.6)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.6)
+    )
+  )
+  (rule
+    (width 200.0)
+    (clearance 200.0)
+    (clearance 100.0 (type smd_to_turn_gap))
+    (clearance 200.0 (type smd))
+    (clearance 200.0 (type "kicad_default"))
+    (clearance 200.0 (type kicad))
+  )
+  (padstack "Via[0-1]_600:300_um"
+    (shape
+      (circle F.Cu 600.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 600.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_600:300_um" "Via[0-1]_600:300_um" default
+  )
+  (via 
+    "Via[0-1]_600:300_um-kicad_default" "Via[0-1]_600:300_um" "kicad_default"
+  )
+  (via_rule
+    default "Via[0-1]_600:300_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_600:300_um-kicad_default"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 200.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    "Net-(U1-VID3)" "Net-(U1-VID0)" "Net-(U1-VID2)" "Net-(U1-VID6)" "Net-(U1-VID1)" "Net-(U1-VID7)" "Net-(U1-VID5)" "Net-(U1-VID9)"
+    "Net-(U1-COMP-SYN)" "Net-(U1-VID8)" "Net-(U1-VSS)" "Net-(U1-VID10)" "Net-(U1-VID11)" "Net-(J1-Pad16)" "Net-(U1-VID4)" "Net-(U1-28M)"
+    "Net-(U1-CLK)" "Net-(U1-FLIP6)" "Net-(U1-IRQ)" "Net-(U1-VDD-Pad58)" "Net-(U1-AD1)" "Net-(U1-PH0)" "Net-(U1-VBL)" "Net-(U1-CLKCS)"
+    "Net-(U1-RA3)" "Net-(U1-RGB8)" "Net-(U1-MONO-COLOR)" "Net-(U1-FLIP7)" "Net-(U1-A12)" "Net-(U1-VDD-Pad59)" "Net-(U1-RGB4)" "Net-(U1-BD7)"
+    "Net-(U1-STRETCH)" "Net-(U1-R{slash}*W)" "Net-(U1-RA4)" "Net-(U1-AD0)" "Net-(U1-TEST)" "Net-(U1-1SEC)" "Net-(U1-RA6)" "Net-(U1-M2SEL{slash}CA)"
+    "Net-(U1-RGB2)" "Net-(U1-BD0)" "Net-(U1-RA2)" "Net-(U1-14M)" "Net-(U1-EN35)" "Net-(U1-RA5)" "Net-(U1-AD5)" "Net-(U1-AD2)"
+    "Net-(U1-BD6)" "Net-(U1-AD4)" "Net-(U1-AD7)" "Net-(U1-SYNC)" "Net-(U1-DB5)" "Net-(U1-RA0)" "Net-(U1-PDC)" "Net-(U1-BD1)"
+    "Net-(U1-AD6)" "Net-(U1-RESET)" "Net-(U1-BD4)" "Net-(U1-HDSEL)" "Net-(U1-RGB1)" "Net-(U1-RA1)" "Net-(U1-RA7)" "Net-(U1-BD2)"
+    "Net-(U1-EXTIRQ)" "Net-(U1-DATA)" "Net-(U1-AD3)" "Net-(U1-BD3)"
+    (clearance_class "kicad_default")
+    (via_rule "kicad_default")
+    (rule
+      (width 200.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)
