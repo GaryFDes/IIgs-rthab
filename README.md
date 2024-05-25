@@ -26,5 +26,5 @@ Steps are:
 9) Connect your RGBToHDMI 12 bit connector to the cable (!!DO NOT!! Supply power to the RGBToHDMI.  The IIgs cable already has power on it.)
 10) Connect to your HDMI monitor.
 
-I included the ROM 03 IIgs Kicad stuff because I only used a socket over the top of the present VGC which is soldered to the motherboard. The pinout I originally did for the ROM 03 IIgs.
+I included the ROM 03 IIgs Kicad stuff because I only used a [socket](https://www.amazon.com/dp/B0C7GGJW49) over the top of the present VGC which is soldered to the motherboard. The pinout I originally did for the ROM 03 IIgs.
 12) Start up the monitor and the IIgs.
