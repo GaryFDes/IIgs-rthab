@@ -1,4 +1,4 @@
-# IIgs-rthab
+# IIgs RGBToHDMI Adaptor Board
 ROM 01 Apple IIgs RGBToHDMI Adapter board [Top](pictures/Top%20of%20Board.jpeg)/[Bottom](pictures/Bottom%20of%20Board.jpeg)
 
 [Plug](https://warwickts.com/4405/W9327-68-Way-PLCC-Plug) that I used and bought there.
