@@ -22,7 +22,7 @@ Steps are:
 5) Surface mount the plug.
 6) Through hold solder the socket.
 7) Connect the cable that is long enough to go through the opening on the IIgs.
-8) Unplug the VGC (I suggest a good puller) and insert the VGC into the socket on the board.
+8) Unplug the VGC (I suggest a good puller) and insert the VGC into the socket on the board. I used [this](https://www.amazon.com/dp/B00FZPSRGE)
 9) Connect your RGBToHDMI 12 bit connector to the cable (!!DO NOT!! Supply power to the RGBToHDMI.  The IIgs cable already has power on it.)
 10) Connect to your HDMI monitor.
 
